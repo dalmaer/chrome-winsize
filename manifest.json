@@ -1,0 +1,18 @@
+{
+  "name": "Window Size", 
+  "version": "0.1",
+  "description": "Displays the size of the main window",
+/*  "icons": { "128": "gmail-128x128.png" }, */
+  "permissions": [
+    "tabs"
+  ],
+  "toolstrips": [
+    "winsize.html"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["contentscript.js"]
+    }
+  ]
+}
